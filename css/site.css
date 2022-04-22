@@ -1,0 +1,13 @@
+#intro {
+background-color: blue;
+width: 1440px;
+min-height: 140px;
+padding: 80px;
+margin: auto;
+border: solid 15px #808000;
+font-size: 20px;
+}
+
+body {
+  background-color: Darkolivegreen;
+}

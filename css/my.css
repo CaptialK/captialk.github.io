@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-sans-serif;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(../img/background.jpg);
+  background: :#cccccc;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 128px;
+  cursor: pointer;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #2F4F4F;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+#intro {
+background-color: Burlywood;
+width: 100px;
+min-height: 15px;
+padding: 20px;
+border: solid 15px #FFF8DC;
+font-size: 20px;
+text-align: center;
+margin:auto;
+top: 50%;
+}
+
+
+h1 {
+color: White;
+font-family: "Times new roman"
+font-size: 200%;
+text-align: center;
+}
+
+#duct {
+color: White;
+font-family: "Times new roman"
+font-size: 200%;
+text-align: center;
+}
+
+#ball {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: green;
+}
+
+#ball a {
+    font-weight: bold;
+    font-size: 4em;
+    transition: all 500ms;
+    color: #fff;
+}
+
+#ball a:hover {
+    font-size:88px;
+    font-size-adjust: 20px;
+}
+
+#ball {
+margin:auto;
+text-align:center;
+}
+
+
+body{
+  background-color:black;
+}
+
+.hamburger__toggle{
+  display:block;
+  position: relative;
+  background-color:#3d3d3d;
+  width: 60px;
+  height: 60px;
+  margin:50px auto;
+  border-radius:50%;
+  border:none;
+}
+
+/* give the span element and related pseudo-elements the appearance of white lines */
+.hamburger__icon,
+.hamburger__icon::before,
+.hamburger__icon::after {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* center the span element in the middle of its containing button */
+.hamburger__icon {
+  top: calc(50% - 2px);
+  left: calc(50% - 15px);
+}
+
+/* position the two pseudo-elements to the very left */
+.hamburger__icon::before,
+.hamburger__icon::after {
+  content: "";
+  left: 0;
+}
+
+/* this is the top dash of the hamburger */
+.hamburger__icon::before {
+  bottom: 8px;
+}
+
+/* this is the bottom dash of the hamburger */
+.hamburger__icon::after {
+  top: 8px;
+}
+
+/* HOVER STYLES ON THE BUTTON */
+
+/* rotate middle dash of hamburger */
+.hamburger__toggle:hover .hamburger__icon {
+  height: 5px;
+  width: 54px;
+  left: 5px;
+  top: calc(50% - 2px);
+  transform: rotate(-45deg);
+  background-color: red;
+}
+
+/* rotate bottom dash of hamburger counter clockwise */
+.hamburger__toggle:hover .hamburger__icon::after {
+  width: 54px;
+  height: 5px;
+  top: -1px;
+  transform: rotate(-270deg);
+  background-color: red;
+}
+
+/* hide the top dash by scaling it to 0 */
+.hamburger__toggle:hover .hamburger__icon::before {
+  transform: scale(0);
+}
+
+/* TRANSITION */
+/* adjust duration to see it happen slower */
+.hamburger__icon, .hamburger__icon::after {
+  transition: all 0.3s linear;
+}
