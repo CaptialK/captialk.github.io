@@ -6,7 +6,7 @@
 .banner {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(../img/background.jpg);
+  background-image:url("..//img/madel.gif");
   background: :#cccccc;
   background-size: cover;
   background-position: center;
@@ -19,6 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 25px;
 }
 
 .logo {
@@ -35,7 +36,7 @@
 
 .navbar ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #black;
   text-transform: uppercase;
 }
 
@@ -43,7 +44,7 @@
   content: '';
   height: 3px;
   width: 0%;
-  background: #2F4F4F;
+  background: ivory;
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -54,32 +55,24 @@
   width: 100%;
 }
 
-#intro {
-background-color: Burlywood;
-width: 100px;
-min-height: 15px;
-padding: 20px;
-border: solid 15px #FFF8DC;
-font-size: 20px;
-text-align: center;
-margin:auto;
-top: 50%;
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: ivory;
+}
+a:hover {
+    color: ivory;
 }
 
 
 h1 {
 color: White;
-font-family: "Times new roman"
+font-family: "Times new roman";
 font-size: 200%;
 text-align: center;
 }
 
-#duct {
-color: White;
-font-family: "Times new roman"
-font-size: 200%;
-text-align: center;
-}
 
 #ball {
     margin-top: 100px;
@@ -106,8 +99,9 @@ text-align:center;
 
 
 body{
-  background-color:black;
+  background-color:#cccccc;
 }
+
 
 .hamburger__toggle{
   display:block;
@@ -184,4 +178,121 @@ body{
 /* adjust duration to see it happen slower */
 .hamburger__icon, .hamburger__icon::after {
   transition: all 0.3s linear;
+}
+
+
+.wlecome {
+  width: 100%;
+  height: 100vh;
+  background-color: #cccccc;
+}
+
+#lg{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: fill 0.5 ease forwards 4.5s;
+}
+
+#lg path:nth-child(1){
+  stroke-dasharray: 30px;
+}
+#lg path:nth-child(2){
+stroke-dasharray: 915.999;
+stroke-dashoffset: 915.999;
+animation: line-anim 3s ease forwards;
+}
+
+#lg path:nth-child(3){
+  stroke-dasharray: 738;
+  stroke-dashoffset: 738;
+  animation: line-anim 3s ease forwards 0.3s;
+}
+#lg path:nth-child(4){
+  stroke-dasharray: 840;
+  stroke-dashoffset: 840;
+  animation: line-anim 3s ease forwards 0.6s;
+}
+
+#lg path:nth-child(5){
+  stroke-dasharray: 748;
+  stroke-dashoffset: 748;
+  animation: line-anim 3s ease forwards 0.9s;
+}
+#lg path:nth-child(6){
+  stroke-dasharray: 835;
+  stroke-dashoffset: 835;
+  animation: line-anim 3s ease forwards 1.2s;
+}
+#lg path:nth-child(7){
+  stroke-dasharray: 925;
+  stroke-dashoffset: 925;
+  animation: line-anim 3s ease forwards 1.5s;
+}
+
+#lg path:nth-child(8){
+  stroke-dasharray: 564.5;
+  stroke-dashoffset: 564.5;
+  animation: line-anim 3s ease forwards 1.8s;
+}
+
+#lg path:nth-child(9){
+  stroke-dasharray: 564.5;
+  stroke-dashoffset: 564.5;
+  animation: line-anim 3s ease forwards 2.1s;
+
+}#lg path:nth-child(10){
+  stroke-dasharray: 564.5;
+  stroke-dashoffset: 564.5;
+  animation: line-anim 3s ease forwards 2.1s;
+}
+
+#lg path:nth-child(11){
+  stroke-dasharray: 564.5;
+  stroke-dashoffset: 564.5;
+  animation: line-anim 3s ease forwards 2.1s;
+}#lg path:nth-child(12){
+  stroke-dasharray: 564.5;
+  stroke-dashoffset: 564.5;
+  animation: line-anim 3s ease forwards 2.1s;
+}#lg path:nth-child(13){
+  stroke-dasharray: 564.5;
+  stroke-dashoffset: 564.5;
+  animation: line-anim 3s ease forwards 2.1s;
+}#lg path:nth-child(14){
+  stroke-dasharray: 564.5;
+  stroke-dashoffset: 564.5;
+  animation: line-anim 3s ease forwards 2.1s;
+}#lg path:nth-child(15){
+  stroke-dasharray: 623.1;
+  stroke-dashoffset: 623.1;
+  animation: line-anim 3s ease forwards 2.1s;
+}#lg path:nth-child(16){
+  stroke-dasharray: 694.5;
+  stroke-dashoffset: 694.5;
+  animation: line-anim 3s ease forwards 2.1s;
+}#lg path:nth-child(17){
+  stroke-dasharray: 564.5;
+  stroke-dashoffset: 564.5;
+  animation: line-anim 3s ease forwards 2.1s;
+}#lg path:nth-child(18){
+  stroke-dasharray: 564.5;
+  stroke-dashoffset: 564.5;
+  animation: line-anim 3s ease forwards 2.1s;
+}
+
+@keyframes line-anim {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from{
+    fill: transparent;
+  }
+  to{
+    fill:;
+  }
 }
