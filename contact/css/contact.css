@@ -52,7 +52,7 @@
   content: '';
   height: 3px;
   width: 0%;
-  background: #2F4F4F;
+  background: black;
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -72,4 +72,37 @@ a:link, a:visited {
 }
 a:hover {
     color: black;
+}
+
+.email
+{
+  font-size: 30px;
+}
+
+.email ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.email ul li a {
+  text-decoration: none;
+  color: #black;
+  text-transform: uppercase;
+}
+
+.email ul li::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.email ul li:hover::after {
+  width: 100%;
 }
