@@ -106,3 +106,10 @@ a:hover {
 .email ul li:hover::after {
   width: 100%;
 }
+
+h3{
+  font-size: 11px;
+  margin-top: 57.5vh;
+  margin-left: 35px;
+  text-align: left;
+}

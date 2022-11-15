@@ -10,5 +10,3 @@ imgs.forEach(img => {
     fullPage.style.display = 'block';
   });
 });
-
-console.log('getPics')
