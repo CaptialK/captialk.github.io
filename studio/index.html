@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photos</title>
+  <link rel="stylesheet" type="text/css" href="..//studio/studio.css" />
+  <script src="js/site.js"></script>
+<script type="text/javascript" src="..//studio/studio.js"></script>
+
+
+</head>
+<body>
+
+  <div class="banner">
+    <div class="navbar">
+      <img scr="img/logo2.png", class="logo">
+      <ul>
+        <li><a href="..//index.html">Home</a></li>
+        <li><a href="..//aboutme/index.html">Aboutme</a></li>
+        <li><a href="..//animations/index.html">Digital Work</a></li>
+        <li><a href="..//studio/index.html">Photos</a></li>
+        <li><a href="..//contact/index.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="..//studio/img/curve1.jpg" style="width:100%">
+        <div class="text">Japan B&W</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="..//studio/img/stack1.jpg" style="width:100%">
+        <div class="text">Focus Stack</div>
+      </div>
+
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="..//studio/img/before1.jpg" style="width:100%">
+        <div class="text">Photo Restoration - Before</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="..//studio/img/before2.jpg" style="width:100%">
+        <div class="text">Photo Restoration - After </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="..//studio/img/hdr.jpg" style="width:100%">
+        <div class="text">HDR</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="..//studio/img/flower.jpg" style="width:100%">
+        <div class="text">Light</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+  </div>
+
+
+
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>

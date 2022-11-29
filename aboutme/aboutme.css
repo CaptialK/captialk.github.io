@@ -48,7 +48,7 @@
   content: '';
   height: 3px;
   width: 0%;
-  background: beige;
+  background: black;
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -63,10 +63,10 @@ a {
     text-decoration: none;
 }
 a:link, a:visited {
-    color: ivory;
+    color: black;
 }
 a:hover {
-    color: ivory;
+    color: black;
 }
 
 
