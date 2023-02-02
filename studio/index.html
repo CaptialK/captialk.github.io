@@ -4,7 +4,7 @@
   <title>Photos</title>
   <link rel="stylesheet" type="text/css" href="..//studio/studio.css" />
   <script src="js/site.js"></script>
-<script type="text/javascript" src="..//studio/studio.js"></script>
+<script type="text/javascript" src="js/studio.js"></script>
 
 
 </head>
@@ -12,53 +12,78 @@
 
   <div class="banner">
     <div class="navbar">
-      <img scr="img/logo2.png", class="logo">
+      <a href="..//index.html">
+      <img src="..//img/vinsonlogo.png" class="logo">
+    </a>
       <ul>
         <li><a href="..//index.html">Home</a></li>
-        <li><a href="..//aboutme/index.html">Aboutme</a></li>
-        <li><a href="..//animations/index.html">Digital Work</a></li>
-        <li><a href="..//studio/index.html">Photos</a></li>
-        <li><a href="..//contact/index.html">Contact</a></li>
+        <li><a href="..//aboutme/about.html">Aboutme</a></li>
+        <li><a href="..//animations/motion.html">Motion Reel</a></li>
+        <li class="current"><a href="..//studio/index.html">Photos<a/></li>
+        <li><a href="..//contact/contact.html">Contact</a></li>
       </ul>
     </div>
     <div class="slideshow-container">
 
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <div class="numbertext">1 / 6</div>
-        <img src="..//animations/img/outdoorpatio.png" style="width:100%">
-        <div class="text">Outdoor Patio</div>
+        <div class="numbertext">1 / 10</div>
+        <img src="..//animations/img/cargif.gif" style="width:100%">
+        <div class="text">3D Plexus Effect, Made with a procedural set up, resposible for Art Direction, Lighting, Texturing and node based setup. Noise is from GIF compresion </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 10</div>
+        <img src="..//animations/img/danceplexus.gif" style="width:100%">
+        <div class="text"> 3D Plexus Effecr applied to motion capture data, respossible for Motion capture data, Lighting, Texturing.</div>
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">2 / 6</div>
+        <div class="numbertext">3 / 10</div>
         <img src="..//animations/img/portal.jpg" style="width:100%">
-        <div class="text">Portal Scene</div>
-      </div>
-
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 6</div>
-        <img src="..//animations/img/reel3.jpg" style="width:100%">
-        <div class="text"> Vase Modeling </div>
+        <div class="text">Isometric Portal, Responsible for, Lightig, Low Poly Modeling, Texturing, UV Mapping. </div>
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">4 / 6</div>
-        <img src="..//animations/img/reel2.jpg" style="width:100%">
-        <div class="text"> Living Room Deisgn </div>
+        <div class="numbertext">4 / 10</div>
+        <img src="..//animations/img/ballc4d.jpg" style="width:100%">
+        <div class="text"> Cloth Simulation, Responsible for Ligthing, Texturing, and Simulation</div>
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">5 / 6</div>
-        <img src="..//animations/img/reel4.jpg" style="width:100%">
-        <div class="text"> Geometry Scatter </div>
+        <div class="numbertext">5 / 10</div>
+        <img src="..//animations/img/clothsim.gif" style="width:100%">
+        <div class="text"> Cloth Simulation GIF</div>
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">6 / 6</div>
+        <div class="numbertext">6 / 10</div>
         <img src="..//animations/img/neon.jpg" style="width:100%">
-        <div class="text"> Text </div>
+        <div class="text"> 3D Text, Resposible for lighting, modeling,  </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 10</div>
+        <img src="..//animations/img/reel3.jpg" style="width:100%">
+        <div class="text"> 3D Modeled Vases, Responsible for, Art Direction, Modeling, Texturing, Lighting </div>
+      </div>
+
+
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 10</div>
+        <img src="..//animations/img/blobwire.jpg" style="width:100%">
+        <div class="text"> Abstract Shape, Resposible for Art direction, Modeling, Lighting </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 10</div>
+        <img src="..//animations/img/cuberoll.jpg" style="width:100%">
+        <div class="text"> Textured Cubes, Resposible for Lighting, Texturing, and Animations </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 10</div>
+        <img src="..//animations/img/cuberoll.gif" style="width:100%">
+        <div class="text"> Textured Cubes GIF</div>
       </div>
 
       <!-- Next and previous buttons -->
@@ -75,6 +100,10 @@
       <span class="dot" onclick="currentSlide(4)"></span>
       <span class="dot" onclick="currentSlide(5)"></span>
       <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
     </div>
 
   </div>
@@ -108,4 +137,6 @@
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
   }
+
+
   </script>

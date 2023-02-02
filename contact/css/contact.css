@@ -1,21 +1,26 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-sans-serif;
     text-align: center;
     background-color: papayawhip;
 }
+
 #we{
-    padding-top: 50px;
+    width: 100%
+    height: 100vh;
     font-size: 30px;
+}
+
+#errorgif{
+  width: 480px;
+  length: 270px;
 }
 
 
 .banner {
   width: 100%;
   height: 100vh;
-  background-image:url("..//img/mandelfinal2.gif");
-  background: :#cccccc;
+  background-image:url("..//contact/css/errorfour.gif");
   background-size: cover;
   background-position: center;
 }
@@ -74,6 +79,11 @@ a:hover {
     color: black;
 }
 
+.navbar li.current a{
+  color: black;
+  text-decoration: underline;
+}
+
 .email
 {
   font-size: 30px;
@@ -109,7 +119,7 @@ a:hover {
 
 h3{
   font-size: 11px;
-  margin-top: 57.5vh;
+  margin-top: 40vh;
   margin-left: 35px;
   text-align: left;
 }
